@@ -1,3 +1,4 @@
+
 html {
   font-size: 16px;
 }
@@ -9,7 +10,13 @@ body {
   font-size: 1rem;
   color: #444444;
 }
-
+@media screen and (orientation:landscape) {
+  body{
+      background-color: #d3d3d3;
+     
+  }
+  
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -39,9 +46,7 @@ a:hover, a:focus {
   margin: 0;
 }
 
-#banner {
-  object-fit: cover;
-}
+
 
 
 h1 {
@@ -50,6 +55,9 @@ h1 {
 
 #banner {
    width: 100%; 
+    object-fit: cover;
+   height: 150px;
+   
 }
 
 #about {
@@ -177,4 +185,56 @@ h3 {
   color: #71717A;
   font-size: 0.875rem;
 }
+#logo-with-text{
+  display: none;
+}
+/* Small devices (tablets) */
+@media screen and (min-width: 576px) {
+  /* CSS rules */
+  html {
+    font-size: 14px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #444444;
+  }
+  h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+ 
+#logo-with-text{
+  display: block;
+}
+#logo{
+  display:none;
+}
+}
 
+/* Medium devices (laptops) */
+@media screen and (min-width: 768px) {
+  /* CSS rules */
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+  /* CSS rules */
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1200px) {
+  /* CSS rules */
+}
+a {
+  text-decoration: none;
+  color: #3B82F6;
+}
+
+a:hover, a:focus {
+  color: #1D4ED8;
+}
